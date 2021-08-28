@@ -1,0 +1,70 @@
+Nested function:-
+
+def add(x,y):
+    def sub(x,y):
+        def mul(x,y):
+            return x*y
+        print(mul(20,30))
+        print(mul(3000,2))
+        return x-y
+    print(sub(20,10))
+    return x+y
+print(add(50,20))
+
+
+
+Decorators:-
+------------
+
+Decorator is function which can take a function as arugument and extend its functionality red returns modified function with extended functionality.
+
+
+input tunction(wish())---------Decorator-----------new(add functionality)
+			                                        (inner(())
+
+input function-------------Decorator function-------output function with
+													Extendede functionality
+
+
+The main objective of decorator function is we can extend the functionality of existing function without modifies that function.
+
+
+def decor(func):
+    def inner(name):
+        if name == 'chiku':
+            print('Hello chiku Good evening')
+        else:
+            func(name)
+    return inner
+
+@decor
+def wish(name):
+    print('Hello',name,'Good morning')
+
+
+wish('Rahul')
+wish('chiku')
+
+
+output:-
+
+Hello Rahul Good morning												
+Hello chiku Good evening													
+
+
+ex:-2
+
+def smart_division(func):
+    def inner(a,b):
+        print("we are dividing",a,"with",b)
+        if b == 0:
+            print("OOps...can not divide")
+            return
+        else:
+            return func(a,b)
+    return inner
+
+@smart_division
+def division(a,b):
+    return a/b
+print(division(20,0))

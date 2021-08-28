@@ -1,0 +1,36 @@
+                Data Types
+Garbage collection:-
+
+Python delets unwanted objects automatically to free memory space.The process by which python peridocally free and reclaims blocks of memory that no longerare in use is called Garbage collection.
+
+a = 10---- a variable is hold a integer so that a is a integer_variable.
+
+What is Data Types?
+
+Data type represent the type of data present insidea variable.
+In python we not required to specify the type explicitly.Based on the value provided,the type will be assigned automatically .Hence Python is Dynamically typed language.
+
+There are 14 types od data type are prsent in python.
+
+1.integer(int())
+2.float(float())
+3.complex(complex())
+4.boolean(bool())
+5.string(st(())
+6.bytes(bytes())
+7.bytearray(bytearray())
+8.range(range())
+9.list(list())
+10.tuple(tuple())
+11.set(set())
+12.frozenset(frozenset())
+13.dictionary(dict())
+14.None(None())
+
+
+python some important built-in function?
+
+1.print():-To Print this.
+2.id():- location tress
+3.type:-check the data type
+4.dir():-check the methods of variable,function,class and modules 

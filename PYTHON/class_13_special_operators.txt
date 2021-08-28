@@ -1,0 +1,76 @@
+special operator:-
+----------------
+
+python defines 2 special operators
+
+1.Identity operators
+2.Membership Operators
+
+
+Identity operators:-
+-------------------
+
+we can use identity operators for adress comparision.
+
+Note:- python have a in-built function id () for seraching the adrees / location.
+
+2 identity operators are available
+
+1. is
+2. is not
+
+r1 is r2 returns True if r1 and r2 are pointing to the same object.
+r1 is not r2 returns True if r1 and r2 are not pointing to the same object.
+
+ex:-1
+>>> a = 10
+>>> b = 10
+>>> print(a is b)
+True
+
+ex:-2
+
+>>> a = 10
+>>> b = 20
+>>> print(a is b)
+False
+
+ex:-3
+
+>>> a = 10
+>>> b = 20
+>>> print(a is not b)
+True
+>>> 
+
+
+Membership Operators:-(imp)
+
+We can use membership operators to check whether the given object present in the given collection.(it may be string,list,set,tuple,fzset,bytes,bytearry,dictionary).
+
+in  :-Returns True if the given object present in the specified 			collections.
+
+not in:- Returns True if the given object not present in specified 				collections
+
+>>> a = 'chiku'
+>>> print('c' in a)
+True
+>>> print('d' in a)
+False
+>>> 
+>>> l = [10,20,30,40]
+>>> print(20 in l)
+True
+>>> print(200 in l)
+False
+>>> 
+
+
+not in:-
+
+>>> l = [10,20,30,40]
+>>> print(20 not in l)
+False
+>>> print(70 not in l)
+True
+>>> 

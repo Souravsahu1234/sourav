@@ -1,0 +1,94 @@
+Anonymous Functions:-
+
+Sometimes we can declare a function without any name,such type of naeless functions are called Anonymous Functions or lambda function
+
+normal:
+ex:-1
+def add(a,b):
+	c = a+b
+	return c
+
+result = add(10,20)
+
+ex-2:-
+
+def sqrureit(n):
+	a = n*n
+	return a
+	
+result = sqrureit(4)
+
+
+lambda function:-
+
+we can define by using lambda keyword.
+ex:-
+s = lambda n:n*n
+print('The squreit 15:',s(15))
+
+add = lambda a,b:a+b
+print(add(10,20))
+
+syntax:-
+
+
+variable = lambda argument_list:expression
+
+Note:- by using lambda function we can write very concise code so that readability of program will improved.
+
+#q.lambda function to find biggest of given value.
+a = int(input('Enter 1st no.:'))
+b = int(input('Enter 2nd no.:'))
+
+s = lambda a,b:a if a>b else b
+
+print('The biggest of',a,'and',b,'is:',s(a,b))
+
+output:-
+
+Enter 1st no.:100
+Enter 2nd no.:200
+The biggest of 100 and 200 is: 200
+
+
+Note:-
+lambda function internally returns expressin value and we are not required to wrtite  return statement explicitly.
+
+Note:-
+sometimes we can pass function as arguments= to another function,In such cases lambda functions are best choice.
+
+we can use lambda function very commonly with filter(),map() and reduce()coz these functions expect function as asrgument.
+
+
+filter() function:-
+-----------------
+
+we can use filter() function to filter value from the given sequence based on some condition.
+
+syntax:-
+filter(function,sequence)
+
+where function argument is responsiable to perform condition check sequence can list or tuple or string
+
+Q.program to filter only even number from the list by using filter() function?
+
+#without lambda
+
+'''def is_even(n):
+    if n%2==0:
+        return True
+    else:
+        return False
+
+li = [0,5,10,15,20,25,30,35,40,45,50]
+
+l1 = list(filter(is_even,li))
+
+print(l1)'''
+
+
+#with lambda
+
+li = [0,5,10,15,20,25,30,35,40,45,50]
+l1 = list(filter(lambda x:x%2==0,li))
+print(l1)

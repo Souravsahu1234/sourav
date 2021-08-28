@@ -1,0 +1,65 @@
+                         Programming Lang.
+
+Low Level Programming lang:- 
+it's only user binary numbers and here only 0 and 1 is applicable. so that programming speed is very slow but outpu is very very fast.
+
+ex: a:-01100001
+
+Middle level programming lang:-
+ First time keyboard was introduced and here a converter is applicable the main moto of converter is convert english to binary format. For using the conerter the programming is fast but output is very slow.
+
+High Level Programming lang:-
+
+Oop's(object oriented programming) and Pop's(Procedure oriented programming):- scripting lang) is introduced in the high level programming lang.programming speed is very fast.nad out is very fast.
+
+              Language and Fundamental:-
+
+1.Python is a general purpose of 'High Level Programming Language.'
+2.python is scripting lang.
+3.Python was developed by 'Guido Van Rossam' in 1989 while working at 
+  National Reserach Institute at Netherland.
+4.But officially Python was made available to public in 1991.The official  DOB for pythopn is:Feb 20th 1991.
+5. C++ and perl this two lang. was inspired gudio van russom to made python.
+6.The name python was selected from the TY show."The complete Monty python's circus" which was broadcast in BBC from 1969 to 1974.
+
+Ex:- To Print 'Hello World'
+
+Java:-
+
+public class HelloWorld
+{
+	p s V main(String[] args)
+	{
+		 SOp("Hello World");
+	}
+}
+
+c:
+#include<stdio.h>
+void main()
+{
+	print("hello world")
+}
+
+python:-
+print("Hello world")
+
+
+Where we can use python:-
+
+we can use everywhere. The most common important application areas are.
+
+1.For Developing Desktop application.
+2.For Developing web application.
+3.For Developing Database application.
+4.For Network Programming.
+5.For developing games.
+6.For Data Analysis application.
+7.For Machine Learning.
+8.For AI(Artificial Intelligence) application.
+9.For IOT(Internet of things).
+
+
+Note:- Internally Google and Youtube use python coding.
+
+Download Python:-https://www.python.org/

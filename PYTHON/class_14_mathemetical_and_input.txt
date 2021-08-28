@@ -1,0 +1,174 @@
+             Mathematical functions(math module)
+
+A module is collection of functions,variables and classes etc.
+
+ex:- in-built modules
+
+math
+os
+sys
+
+ex:- 3rd_party_package
+
+pandas
+numpay
+matplotlib
+scikit leran
+sci-py 
+etc.
+
+
+Math:-
+
+math is module that contains serveral functions to perform mathemetical operations.
+
+'Import' is keyword which is helps us to call a module for the
+use.
+
+ex:-=
+
+import math
+
+Note:- Once we import a module then we call any function of that module.
+
+
+functions of math.
+
+[ 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc', 'ulp']
+
+
+Important functions:-
+
+1.sqrt()
+2.pi()
+3.pow()
+4.ceil()
+5.floor()
+6.factorial()
+7.trunc()
+8.gcd()
+9.sin()
+10.cos()
+11.tan()
+
+
+import math
+
+print(math.sqrt(16))
+print(math.pi)
+
+
+output:-
+
+4.0
+3.141592653589793
+
+
+*** we can create alias name by using 'as' keyword. 
+
+Once we create alias name,by using that we can access functions and variables of that module.
+
+import math as m
+
+print(m.sqrt(25))
+print(m.pi)
+
+
+we can import a particular member of module explicitly, using from keyword.
+
+from math import sqrt,pi
+
+print(sqrt(16))
+print(pi)
+
+output:-
+4.0
+3.141592653589793
+
+
+#Q. Write a python program to find area of circle.
+
+# pi*r**2
+
+from math import pi
+
+r = 16
+print('Area of circle:',pi*r**2)
+   
+
+
+
+             Input and Output Statements:-
+             ----------------------------
+
+Reading dynamic input from the keyboard:-
+-----------
+
+In python 2 there 2 functions are available to read dynamic input from the keyword.
+
+1.raw_input()
+2.input()
+
+
+raw_input():-
+
+This function always reads the data from the keyboard in the form of string format.we have to convert that string type to our required type by using the corresponding type casting method.
+
+ex :=
+
+x = raw_input('Enter First number')
+
+
+2.input():-
+
+input() functions can be used to read data directly in our required format. WE are not required to perform type casting.
+
+x = input("Enter value")
+
+10----int
+'kusha'----str
+10.5-----float
+True------boolean
+
+
+Note:- But in python3 we have only input() mathod and raw_input() is not available.
+
+*** Python3 input()function brhaviour exactly same as raw_input() method pf python2.
+
+
+In the python3 for dynamic acceptance only input() function is available.
+
+
+
+#dynamic method
+
+a = int(input('Enter the first value:'))
+b = int(input('Enter the second value:'))
+
+c = a+b
+print(c)
+
+
+
+
+eval():-
+
+eval Function take a string and evaluate the result.
+
+ex:-
+a = eval(input('Enter the first value:'))
+b = eval(input('Enter the second value:'))
+
+c = a+b
+print(c)
+
+
+question:-
+
+1. WAP to raed Employee data from the keuboard and print the data.
+
+1.Emp no.
+2.Emp name
+3.Emp salary
+4.Emp address
+5.Emp married(yes/no)

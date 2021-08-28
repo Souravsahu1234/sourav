@@ -1,0 +1,117 @@
+                      Type Casting
+                      ------------
+
+We can convert one type value to another type..This conversion is called Typecasting or Type coresion.
+
+int,float,complex,boolean,string
+
+list,tuple,set,fzset,bytes,bytearry
+
+1.int:-
+
+>>> a = 10
+>>> float(a)
+10.0
+>>> complex(a)
+(10+0j)
+>>> bool(a)
+True
+>>> str(a)
+'10'
+>>> 
+
+2.float:-
+
+>>> f = 10.98
+>>> int(f)
+10
+>>> complex(f)
+(10.98+0j)
+>>> bool(f)
+True
+>>> str(f)
+'10.98'
+
+3.complex:-
+
+>>> c = 10+5j
+>>> int(c)
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    int(c)
+TypeError: can't convert complex to int
+>>> float(c)
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    float(c)
+TypeError: can't convert complex to float
+>>> bool(c)
+True
+>>> str(c)
+'(10+5j)'
+
+4.boolean:-
+
+>>> b = True
+>>> int(b)
+1
+>>> float(b)
+1.0
+>>> complex(b)
+(1+0j)
+>>> str(b)
+'True'
+>>> 
+
+
+5.string:-
+
+side_1:-
+
+>> s = 'Kusha'
+>>> int(s)
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    int(s)
+ValueError: invalid literal for int() with base 10: 'Kusha'
+>>> float(s)
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    float(s)
+ValueError: could not convert string to float: 'Kusha'
+>>> complex(s)
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    complex(s)
+ValueError: complex() arg is a malformed string
+>>> bool(s)
+True
+
+side_2:-
+
+>>> s = '10'
+>>> int(s)
+10
+>>> float(s)
+10.0
+>>> complex(s)
+(10+0j)
+>>> bool(s)
+True
+
+----------------------------######################---------------------
+list/tuple/set/fzset/bytes/bytearray:-
+
+>>> l = [1,2,3,4]
+>>> tuple(l)
+(1, 2, 3, 4)
+>>> set(l)
+{1, 2, 3, 4}
+>>> frozenset(l)
+frozenset({1, 2, 3, 4})
+>>> bytes(l)
+b'\x01\x02\x03\x04'
+>>> bytearray(l)
+bytearray(b'\x01\x02\x03\x04')
+
+Note:- except dict and range is not the part of type casting.

@@ -1,0 +1,221 @@
+                         Modules
+                         -------
+
+There are 3 types modules are present in the python
+
+1. In-built module:- Which module are alraed present when python installed.
+
+ex:- math
+	os
+	sys
+
+2.3rd party package:-These are the also python file (like .py extension) but these are not in python we can install separtlly when we can use this.
+
+ex:-
+	pandas
+	numpy
+	matpoltlin
+	sci-py
+	k-means
+	tensrflow
+
+3.user define module:- User can make a python file and also use when it is required,
+
+ex:- file_name.py
+
+
+A group of functions,variables, and classes save to a python file,which is nothing but module.
+
+
+Every python file(.py)acts as a module.
+
+
+ex:- subhankar.py
+
+x = 888
+
+def add(a,b):
+	print('The sum ',a+b)
+
+class ProductDefine(self):
+	 y = 7777
+	 def product(a,b):
+	 	print('The product',a*b)
+
+subhankar module coatains 2 variables 2 functions and 1 class.
+
+if we want to use members of modules in our program then we should import that module.
+
+import modulename
+
+import subhankar
+
+we can access memebes by using module name
+
+modulename.variable
+modulename.function()
+
+
+raka.py
+
+import subhankar
+
+print(subhankar.x)
+print(subhankar.add(10,20))
+print(subhankar.product(100,200
+
+output:-
+888
+The sum: 30
+The product 20000
+
+
+Renaming a module at the time of import(module aliasing)
+
+import subhankar as s
+
+print(s.x)
+print(s.add(10,20))
+print(s.product(100,200))
+
+
+
+from .... import
+----------------
+we can import particular members of module by using from ...import ,
+The main adv. of this is we can access members directly without using module name.
+
+from subhankar import x,add
+
+print(x)
+print(add(10,20))
+print(product(100,200))
+
+output:-
+
+
+888
+The sum: 30
+Traceback (most recent call last):
+  File "C:\Users\chand\PycharmProjects\python_ITM#!_project\module\raka.py", line 5, in <module>
+    print(product(100,200))
+NameError: name 'product' is not defined
+
+
+we can import all lembers of amodules 
+
+from subhankar import *
+
+raka.py
+
+from subhankar import *
+
+print(x)
+print(add(10,20))
+print(product(100,200))
+
+
+
+Various possibility of import:-
+
+import modulename
+import module_1,module_2,module_3
+import modulename as m
+import module_1 as m1,module_2 as m2,module_3 as m3
+from module import member
+from module import member1,member2,member3
+from module import *
+
+
+Findinf members of module by usinf dir() functions:-
+-----------------------
+
+Python provides inbuilt function dir() ti list out all members od current module or a specified module.
+
+dir():- To list out all member of current module.
+dir(modulename):-To list all members of specified module
+
+raka.py
+
+['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'add', 'product', 'x']
+
+
+
+Working with random module:-
+---------------------------
+
+this module defines several functions to generate random memebers,
+we can suse these functions while developing games,incrytography and to generate random numbers on fly for authentication,
+
+
+1.randaom() function:-
+This function always generate some float value between 0 and 1(not inclusive)
+
+0<x<1
+
+from random import *
+for i in range(10):
+    print(random())
+
+output:-
+
+0.008855650849338037
+0.01373749633578547
+0.6903684174385298
+0.06363529229427956
+0.21270735279332342
+0.39196539330459756
+0.6121124632433006
+0.24209201785045797
+0.7466360557317724
+0.5527562531242368
+
+2.randint() function:-
+
+from random import *
+for i in range(10):
+    print(randint(1,1000)) # generate random int value between 1 o 1000
+
+output:-
+------
+
+431
+214
+751
+237
+272
+810
+389
+27
+984
+613
+
+3.uniform():-
+
+It returns random flot values between 2 given numbers
+
+from random import *
+for i in range(10):
+    print(uniform(1,10))
+
+
+output:-
+
+7.337247570431403
+2.6038725817222956
+6.82756173727428
+2.865619176073058
+1.9976730046517526
+1.0218030110307117
+3.7133241463317677
+9.759756934546193
+7.753430789756289
+2.7853941955611266
+
+
+
+
+
+
+
+

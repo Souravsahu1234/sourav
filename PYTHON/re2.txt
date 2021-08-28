@@ -1,0 +1,58 @@
+>>>>>>>>>>>>>>>>...REGULAR EXPRESSION<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+pre define charecter classes::::::
+
+
+\s==>> to print space charecter
+\S====>> any charecter except spaced
+
+\d==>>0-9 print digit
+\D===>>except 0-9
+
+\w====>any word charecter[a-zA-Z0-9] i,e no special charecter
+
+\W===>Special charecter.
+
+
+. ===> all charecter including special charecter
+
+
+charecter classes
+
+[a-z]  and so on 
+
+
+
+qunatifiers:::
+
+we can use qunatifirs to specify the number of occurance( like exactfly one a.......atleast one a...min a 2)
+
+a ==>exactly 1 a..... aaaashfhfhaaajjhjhjajhjhaaaaa
+a+===>>atleast 1 a
+
+a*===>>any number of a including 0 a
+
+a?===>>atmost one or zero a
+
+a{m}====>>>exactly m number of a
+
+a{m,n}===>> mim m and max n number of a
+
+====>>>  IMPORTANT FUNCTION OF RE MODULE <<<<<======
+
+match()====>>>>>"India is small country ">>>>>STARTING beginning of target string
+fullmatch()==> whole string ....
+search()
+findall()
+finditer()
+sub()==>substitude or replacement
+subn()===>>> substitude and number of substitude
+split()
+compile()
+
+
+
+
+
+

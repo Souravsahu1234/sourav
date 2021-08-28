@@ -1,0 +1,71 @@
+                       Functions
+                       ---------
+
+If a group of statememnt is repeatedly required then it is not recommended to write these statements evevrytime seperatly.We have to define these statement as a single unit and we can call that unit any number of times based on our requirement without rewriting.This unit is nothing but function.
+
+Adv:- The main advantage of functions is code reusability.
+
+python supports 2 types of functions
+
+1.in-built/Bulit in functions.
+2.user define function.
+
+in-built/Bulit in:-
+------------------
+
+The functions which are coming along with python software automatically,are called built in functions or pre-define function.
+
+ex:-
+
+print()
+input()
+id()
+type()
+eval()
+sum()
+len()
+
+
+user define function.:-
+------------------------
+
+The functions which are developed by programmer explicitly according to business requirement are called user define functions.
+
+syntax to create user define func.
+---------------------------------
+
+def func_name(snake casing)():
+	'''doc'''
+	bussiness logic
+
+
+Note:- While creating functions we can use 2 keywords
+
+1.def(mandatory)
+2.return(optional)
+
+
+ex:- Write a function to print hello.
+
+
+def wish():
+    print('Hello Good morning')
+
+wish()
+
+output:-Hello Good morning
+
+
+
+Parameter:- Paarameter are inputs to the function contains parameters,then at the time of calling,compulsory we should provide values otherwise,we will get error.
+
+
+#Ex:- Write a function take name of the student.
+def add(a,b):
+	print(a+b)
+
+
+add(10,20)
+add(657,890)
+add(675,343)
+add(786,900)

@@ -1,0 +1,145 @@
+String methods:-
+----------------
+
+s = 'chiku'
+dir(s)
+
+'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill'
+
+
+some very important function of string:-
+
+
+Note:- we are using this data type methods by using (.) format.
+
+1.strip():-The strip() method removes any whitespces from the begining and the end.
+
+ex:-
+>>> s = '   ITM'
+>>> s.strip()
+'ITM'
+
+
+2.lower():-The lower() method returns the string in lower case.
+
+ex:-
+>>> s = 'InSTitue Of TECHnology'
+>>> s.lower()
+'institue of technology'
+
+3.upper():-Return the string in upper case.
+
+ex:-
+s = 'InSTitue Of TECHnology'
+>>> s.upper()
+'INSTITUE OF TECHNOLOGY'
+
+
+4.replace():- The replace method replaces a string with another string.
+
+ex:-
+>>> s = 'jello my friends'
+>>> s.replace('j','H')
+'Hello my friends'
+>>> 
+>>> s = 'jello my friends'
+>>> s.replace('jello','Hello')
+'Hello my friends'
+
+
+5.split():- The split() method split string into substrings if it find instances a common separator.
+
+ex:-
+>>> s = 'Chiku,babulu,kusha,zarif,ashish'
+>>> s.split(',')
+['Chiku', 'babulu', 'kusha', 'zarif', 'ashish']
+>>> 
+>>> s = 'Chiku/babulu/kusha/zarif/ashish'
+>>> s.split('/')
+['Chiku', 'babulu', 'kusha', 'zarif', 'ashish']
+
+6.count:-Returns the number of times a specified values accures in s string.
+
+ex:-
+>>> s = 'I Love apple, apple is best'
+>>> len(s)
+27
+>>> s.count('apple')
+2
+>>> s.count('e')
+4
+>>> s.count('I')
+1
+>>> a = '1 ,1, 1, this is great ,2,2,3'
+>>> a.count('1')
+3
+>>> 
+
+7.endswith():- Returns True if the string endswith the specified values.
+
+>>> s = 'Hello welcome to my world.'
+>>> s.endswith('.')
+True
+>>> s.endswith(',')
+False
+>>> s.endswith('/')
+False
+>>> 
+
+8.startswih():- Returns True if the string startswith the specified values.
+
+>>> s = 'The sun is rise in the east.'
+>>> s.startswith('T')
+True
+>>> s.startswith('A')
+False
+
+9.swapcase():-swapcases ,lower case become upper case and vice versa.
+
+ex:-
+>>> a = 'Hello My name is Peter'
+>>> a.swapcase()
+'hELLO mY NAME IS pETER'
+
+
+10.join()- It is convert substring to a complete string with the help some instance.
+
+>>> l = ['chiku','babulu','prabhas','zarif','ashish']
+>>> s = '-'.join(l)
+>>> s
+'chiku-babulu-prabhas-zarif-ashish'
+>>> 
+
+
+11. find/index():-Search the string for a specified values and returns the position where it was found.
+
+
+>>> a = 'Yes it was'
+>>> a.find('i')
+4
+>>> a.index('i')
+4
+>>> a.find('w')
+7
+>>> a.find('z')
+-1
+>>> a.index('z')
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    a.index('z')
+ValueError: substring not found
+>>> 
+
+
+12. format():-The format() method takes the paased arguments,format then and places them in the string where palceholder {} are curly barclet.
+
+>>> my_order = 'I want pices if item for dollar'
+>>> my_order = 'I want {} pices of item  {} for {} dollar'
+>>> my_order.format('3','567','70$')
+'I want 3 pices of item  567 for 70$ dollar'
+>>> 
+
+
+camel casing:- MyOrder
+
+snake casing:- my_order

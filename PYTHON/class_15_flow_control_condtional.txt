@@ -1,0 +1,66 @@
+                   Flow control
+                   -------------
+
+Flow control control describes the order in which statements will be excuted at run time.
+
+
+There are 3 types Flow control are exits in python
+
+1.conditional st. :- if.elif,else
+2.Transfer st    :-  break, continue,pass
+3.Iterative st    :- for ,while
+
+conditional st:-
+
+1.if :-
+
+syntax:-
+
+if condition:
+	statement_1
+	statement_2
+
+ex:-
+
+name = input('enter your name:')
+
+if name == 'chiku':
+    print('Hello chiku good mrng')
+
+print('Hi very good morning all')
+
+
+if-else:-
+
+syntax:-
+
+if condition:
+	statement_1
+
+else:
+	statemnet_2
+
+#if-else----------------------
+
+name = input('Enter your name:')
+
+if name == 'kusha':
+    print('hi kusha')
+
+else:
+    print('hi chiku')
+
+
+# if-elif-else:-
+
+if condtion:-
+	statement
+
+elif condition:
+	stetemnt
+
+elif condtion:
+	statemnt
+
+else:
+	statemnt

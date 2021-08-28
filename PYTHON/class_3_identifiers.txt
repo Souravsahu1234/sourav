@@ -1,0 +1,47 @@
+Chapter_2            Identifiers
+
+A name in python program is called identifier.
+
+It can be class name or function name or variable name or module name.
+
+Rules to Define Indetifiers in Python:-
+--------------------------------------
+Note:- Python is case sensitive.
+
+1.The only allowed charcter python are:-
+
+-->alphabet symbols(either lower case or upper case)
+-->digits(0 to 9)
+-->only underscore sumbol(_)
+
+2.Indentifier should not start with digit.
+
+---> 12total = 10----(wrong)
+---> total12 = 10----(correct)
+---> _12 = 10----(correct)
+
+3.Indentifires are case sesitive,of course python lang is case sensitive lang. so that indifiers also case sensitive
+
+----> total = 10
+---->TOTAL = 99
+
+4.There are 2 types of nameing.
+---> Camel casing
+---> Snake casing
+
+Camel casing:- ---every words starting char. is capital and here is no space and no (_) is using
+
+ex:-TheBankingProject , MobileApplicationTerm
+
+Snake casing:- every words are small leter,and here is used(_) symbol but no space are allowed.
+
+ex:- _the_banking_project , mobile_application_term
+
+
+Note:-
+1.Id identifiers start with _ symbol then it is indicate smoethingelse.
+
+ x = 10 -----normal varaibale
+ _x = 10 -----protected variable
+__x = 10-----private variable
+___x = 10----magic variable

@@ -1,0 +1,203 @@
+set data type:-
+---------------
+
+If we want to represent a group of values without duplicates where order is not imporant,then we should go for set data type, and set data type is enclosed with curly bracket.  {}.
+
+1.Insertion order is not preserved.
+2.duplicats are not allowed.
+3.heterogenous object are allowed.
+4.index concept is not applicable 
+5.It is mutable collection.
+6.Growable in nature.
+
+ex:-
+>>> s = {1,2,3,7,8,9}
+>>> type(s)
+<class 'set'>
+>>> 
+
+add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update'
+
+
+1.add():- add and element to the set.
+
+>>> s = {1,2,3}
+>>> s.add(90)
+>>> s
+{1, 2, 3, 90}
+>>> 
+
+2.clear():-Removes all elements from the given set.
+
+ex:-
+>>> s = {1,2,3}
+>>> s.clear()
+>>> s
+set()
+>>> 
+
+
+3.copy():- Returns the copy of the set.
+
+ex:-
+>>> s = {1,2,34,56,78}
+>>> s.copy()
+{1, 2, 34, 56, 78}
+>>> b = s.copy()
+>>> b
+{1, 2, 34, 56, 78}
+>>> type(b)
+<class 'set'>
+>>> a = s
+>>> a
+{1, 2, 34, 56, 78}
+>>> 
+
+4.differenece():-Returns a set that contains the items that only exists in set x and not is set s.
+
+ex-
+
+>>> s = {'apple','bananna','orange'}
+>>> x = {'microsoft','apple','windowns'}
+>>> 
+>>> s.difference(x)
+{'orange', 'bananna'}
+>>> x.difference(s)
+{'microsoft', 'windowns'}
+>>> 
+
+5.discard()/remove():-Remove the specifiede item.
+
+s = {'apple','bananna','orange'}
+>>> s.discard('orange')
+>>> s
+{'bananna', 'apple'}
+
+6.intersection():- Return the set,that is the intersection of two or more sets.(common).
+
+ex_1
+>>> s = {'apple','bananna','orange'}
+>>> x = {'microsoft','apple','windowns'}
+>>> s.intersection(x)
+{'apple'}
+
+ex_2
+
+>>> a = {1,2,3,4}
+>>> b = {2,3,6,7}
+>>> a.intersection(b)
+{2, 3}
+>>> 
+
+
+7:- issubset():-Returns whether this set contains another set or not.(all lement are in another ser then :- True)
+
+ex:-
+>>> x = {'a','b','c','d'}
+>>> y = {'f','g','h','a','b','c','d'}
+>>> 
+>>> x.issubset(y)
+True
+>>> z = {'a','b','g','h'}
+>>> x.issubset(z)
+False
+>>> 
+
+8.issuperset():-Returns whether this set contains another set or not.
+
+>>> x = {'a','b','c','d'}
+>>> y = {'f','g','h','a','b','c','d'}
+>>> 
+>>> y.issuperset(x)
+True
+>>> 
+
+9.pop():-Removes an element from the set.
+
+>>> x = {'a','b','c','d'}
+>>> x.pop()
+'a'
+>>> x
+{'b', 'c', 'd'}
+>>> 
+
+10.union:-Returns a set containing the union of sets.
+
+>>> x = {'apple','orange','mango'}
+>>> 
+>>> y = {'Micro','apple','Windows'}
+>>> 
+>>> x.union(y)
+{'Windows', 'apple', 'orange', 'mango', 'Micro'}
+
+
+Note:- set data type is not allowed duplicate value from the set
+
+>>> x = {1,1,1,1,1,2,3,34,3,4,2,2,2,2,5,5,5,5,5,6,7}
+>>> x
+{1, 2, 3, 34, 4, 5, 6, 7}
+>>> 
+
+
+    frozenset():-
+    -------------
+
+It is exactly same as set expect that it is immuatable,Hence we cannot use add or remove function here.
+
+>>> s = {10,20,30,40,50}
+>>> 
+>>> fz = frozenset(s)
+>>> fz
+frozenset({50, 20, 40, 10, 30})
+>>> 
+>>> type(s)
+<class 'set'>
+>>> 
+>>> type(fz)
+<class 'frozenset'>
+
+
+bytes Data type:-
+
+bytes data type reprsens a group of byte numbers just like an array.
+
+>>> x = [10,20,30,40,50]
+>>> 
+>>> type(x)
+<class 'list'>
+>>> 
+>>> b = bytes(x)
+>>> b
+b'\n\x14\x1e(2'
+>>> type(b)
+<class 'bytes'>
+>>> 
+
+Note:- In the bytes data type the only values for byte data type are 0 to 256,By mistake if we are trying to provide any other values then we will get values error.
+
+
+Note_2:- Once we craete bytes data type value,we can not change its values,otherwise we will get Type error.
+
+>>> b[0] = 100
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    b[0] = 100
+TypeError: 'bytes' object does not support item assignment
+>>> 
+
+bytearray data type:-
+
+bytearray is eaxactly same as byte data type except that its element acan be modified.
+
+>>> x = [10,20,30,40,50]
+>>> 
+>>> b = bytearray(x)
+>>> b
+bytearray(b'\n\x14\x1e(2')
+>>> type(b)
+<class 'bytearray'>
+>>> 
+>>> b[0]=100
+>>> b
+bytearray(b'd\x14\x1e(2')
+>>> 

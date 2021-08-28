@@ -1,0 +1,153 @@
+integer data tyepe:-
+-------------------
+
+we can use int data type to reprsent whole number(integral values).
+
+ex:-
+>>> a = 10
+>>> type(a)
+<class 'int'>
+>>> b = -9000
+>>> type(b)
+<class 'int'>
+>>> 
+
+base conversion:-
+
+1.decimal form(float form)
+2.Binary form
+3.Octal form
+4.Hexa Deciaml form.
+
+decimal form(float form)(base-10):-
+------------------------
+
+It is the default system in python
+we can convert int to decimal by using float():-
+The allowed digits are: 0 to 9 and . symbaol
+
+ex:-
+>>> a = 100
+>>> b = float(a)
+>>> print(b)
+100.0
+>>> type(a)
+<class 'int'>
+>>> type(b)
+<class 'float'>
+
+2.Binary form(base-2):-
+--------------
+The allowed digits are :- 0 and 1 
+we are converting int to binary form by using:- bin()
+Literal value should be prefixed with 0b and 0B.
+
+ex:-
+>>> a = 10
+>>> b = bin(a)
+>>> b
+'0b1010'
+>>> a = 9000
+>>> b = bin(a)
+>>> b
+'0b10001100101000'
+
+3.Octal Form(base-8):-
+----------------------
+
+The allowed digits are 0 to 7
+we are converting int to octal form by using:- oct()
+Literal value should be prefixed with 0o and 0O.
+
+ex:-
+
+>>> a = 50
+>>> b = oct(a)
+>>> b
+'0o62'
+>>>  
+
+4.Hexa Deciaml Form(Base-16):-
+-----------------------------
+
+The allowed digits are :- 0 to 9, a-f(both upper and lower)
+we are converting int to hexal form by using:- hex()
+Lietral value should be prefixed with:- 0x and 0X
+
+ex:-
+>>> a = 100
+>>> b = hex(a)
+>>> b
+'0x64'
+>>> 
+>>> c = 600000000
+>>> d = hex(c)
+>>> d
+'0x23c34600'
+
+
+
+flaot Data type:- float()
+------------------------
+
+we can use flaot data type to represent flaoting point values(decimal values).
+
+ex:-
+a = 100.90
+b = -899.89
+c = 70007899.7897878978
+
+>>> a = 900.6556
+>>> type(a)
+<class 'float'>
+
+Note:- we can also reprsent flaoting point value by using exponential form(scientific notation.)
+
+a = 199918768138678136.761368943164893618681396478
+
+exponetial form:- we can use 'e' for exponetial form
+                  'e':- instead
+
+
+>>> f = 1000.200e3
+>>> f
+1000200.0
+>>> f = 1.2e3
+>>> f
+1200.0
+
+Note:-The main advantage of exponential form is we can reprsent big values in less memory and we can assign a big floating in a small format.
+
+Note:- We acn reprsent int values in decial,binary,ocatl,hexal form,but we can not convert float value in this all the format.
+
+
+
+complex data type:-
+
+
+A complex number is of the form
+ 
+
+      a   +    bj
+    (Real)     (imaginary)
+
+    Real + imag = complex number
+
+a and b contain integer and floating point values.
+
+ex:-
+
+3+5j
+10-5.9j
+0.5+0.9j
+-78-89j
+
+addition complex no:-
+
+real part is adding another  real part and img part is adding onther img part.
+
+>>> a = 3 + 8j
+>>> b = 10 + 10j
+>>> 
+>>> a+b
+(13+18j)

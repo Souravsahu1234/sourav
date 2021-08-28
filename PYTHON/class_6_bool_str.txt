@@ -1,0 +1,138 @@
+4.boolean(bool) data type:-
+--------------------------
+
+we can use this data type to reprsent boolean values.
+The allowed values for this data type are : True and False
+
+ex:-
+>>> a = True
+>>> type(a)
+<class 'bool'>
+>>> 
+>>> b = False
+>>> type(b)
+<class 'bool'>
+>>> 
+
+Internally python represent True as 1 and False as 0.
+
+>>> True + True
+2
+>>> True + False
+1
+>>> False + False
+0
+
+ex:-
+>>> a = 10
+>>> b = 20
+>>> a>b
+False
+>>> a<b
+True
+
+
+string data type:-
+------------------
+
+str() reprsents string data type.
+
+A string is a sequence of characters enclosed with single or double quote or triple quote.
+
+ex:-
+>>> s = '12@ABc '
+>>> type(s)
+<class 'str'>
+>>> 
+>>> z = ' '
+>>> type(z)
+<class 'str'>
+>>> 
+
+>>> 
+>>> a = "subhankar@123"
+>>> type(a)
+<class 'str'>
+>>> 
+
+Note:- If in a python page we start to using single then in this we can only use single quote(Industrial rules).If in a python page we start to using duoble then in this we can only use double quote(Industrial rules).
+
+expention:- when we using single quote if in the sentence a 's is requied in this condition we can use double quote.
+
+ s = "This is ashish's pen"
+
+
+ Triple quote:-
+
+ When we can use triple quote it's called doc string.
+
+ def add(x,y):
+ '''This is a additional function'''
+ 	return x+y
+
+ Note:-Doc string is string which is used in function or class for the information.
+
+ Slicing of string:-
+
+ slice means a piece.
+
+ [] opeartor is called slice operator,which can be used ti retreive parts of string.
+
+ The python string follows zero based index.
+ The index can be either +ve or -ve.
+
+ +ve index means forward direction from left to right
+ -ve index means backward direction from right to left
+
+                  -6  -5   -4   -3  -2 -1
+                  A   S    H    I   S  H
+
+                  0   1     2    3   4  
+
+>>> s = 'Ashish'
+>>> s[0]
+'A'
+>>> s[2]
+'h'
+>>> s[5]
+'h'
+>>> s[-1]
+'h'
+>>> 
+
+string slice rule:-
+                     [start:end+1:step]
+
+
+>>> s = 'I Love apple'
+>>> s[-1:-6]
+''
+>>> s[-6:]
+' apple'
+>>> 
+>>> s[7:]
+'apple'
+>>> s[7:12]
+'apple'
+
+>>> s[0::2]
+'ILv pl'
+>>> s[0:]
+'I Love apple'
+>>> s[0::3]
+'Io p'
+
+
+
+Home work:-
+
+
+s = 'Yes i love apple, and i have two apples'
+
+req:- 
+
+1.love
+2.apples
+3.ysilv
+4.ylp
+

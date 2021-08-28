@@ -1,0 +1,129 @@
+                    Exception Handeling
+                    -------------------
+
+In programming language there are 2 types of errors are possiable.
+
+1.Syntax Errors
+2.Runtime Errors/User define Errors.
+
+Syntax Errors:-
+--------------
+
+The errors which occurs because of invalid syntax are called syntax errors.
+
+ex:-
+
+for i in range(1,10)
+	print(i)
+
+SyntaxError : invalid syntax
+
+ex:-
+
+print'Hello'
+
+SyntaxError: invalid syntax
+
+Note:- Programmer is responsiable to correct these syntax errors,once all syntax are corected then only program execution will be started.
+
+2.Runtime Errors:-
+------------------
+
+Also know as Exceptions.
+While executing the program if something goes wrong coz of end user input or programming logic or memory problem etc then we will ger Runtime Errors.
+
+ex:-1
+ 10/0
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    10/0
+ZeroDivisionError: division by zero
+
+ex:-2
+
+print(10/'ten')
+output:-
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+
+ex:-3
+
+x = int(input('Enter the first number:'))
+
+output:-
+
+Enter the first number:Subhankar
+Traceback (most recent call last):
+  File "C:\Users\chand\PycharmProjects\python_ITM#!_project\Exception Handeling\exception_handel.py", line 3, in <module>
+    x = int(input('Enter the first number:'))
+ValueError: invalid literal for int() with base 10: 'Subhankar'
+
+
+Note:- Exception handeling concept applicable only for Runtime Errors but not for syntax errors.
+
+What is Exception:-
+------------------
+
+An unwanted and unexcepted event that distrubs normal flow of programs is called exception.
+
+ex:-
+
+ZeroDivisonError
+ValueError
+TypeError
+FileNotFoundError
+EOFError
+
+It is highly recommended to handel exceptions.the main objective of expetion handeling is Graceful Termination of the program.
+
+Exception handeling does not mean repairinh exception.we have to define althernetive way to continue rest of the program normally.
+
+ex:-
+
+try:
+	Ricky Code
+
+except ErrorName:
+	
+	error slove
+
+
+1.What is Exception?
+2.What is the purpose of exception handeling?
+3.What is the meaning of exception handeling
+
+
+            
+
+                       Python's Exception Hierarchy
+Imp Error:-
+
+1.AttributeError
+2.ArithmeticError
+3.ZeroDivisionError
+4.OSError
+5.FileNotFoundError
+6.Exception
+
+Every Exception in Python is a class.
+
+All exceptions classes are child classes of BaseException.That is very exception class extends BaseException either directly or indirectly..Henece BaseException acts as root for python Exception Hierarchy.
+
+ex:-
+
+print('subhankar')
+x = eval(input('First Number:'))
+y = eval(input('second Number:'))
+
+try:
+    print(x/y)
+except ZeroDivisionError:
+    print('Zero is not allowed')
+print('swayam')
+
+output:-
+
+subhankar
+First Number:10
+second Number:0
+Zero is not allowed
+swayam

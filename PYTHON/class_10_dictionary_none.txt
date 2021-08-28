@@ -1,0 +1,182 @@
+Dictionary:-
+-----------
+
+A dictionary is a collection which is unordered,changeable and index.In python dictionary writen in {} and they have keys and values pair,key and value pairs are separate by :(colon),and one key-values pairs are separted by onther key-value pair by comma.
+
+ex:-
+>>> d = {1:'a',2:'b',3:'c'}
+>>> type(d)
+<class 'dict'>
+
+ex:-2
+
+di = {'Brand':'Ford','Model':'XUV','Year':2015}
+
+Note:- In dictionary of python ,values are may be equal but keys is not equal any key.
+
+ex:- di = {'Brand':'Ford','Model':'XUV','Year':2015,'Company':'Ford'}
+
+
+Accesing items:- You can access the items by reffering to its key name,[](inside squre braket)
+
+ex:-
+
+>>> di = {'Brand':'Ford','Model':'XUV','Year':2015}
+>>> type(di)
+<class 'dict'>
+>>> 
+>>> x = di['Brand']
+>>> x
+'Ford'
+
+
+
+Methods/Functions of Dictionary:-
+
+'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
+
+1.clear():-Removes all the elements from the dictionary.
+
+ex:-
+>>> di = {'Brand':'Ford','Model':'XUV','Year':2015}
+>>> di.clear()
+>>> di
+{}
+
+2.copy():- Returns the copy of the dictionary.
+
+ex:-
+>>> di = {'Brand':'Ford','Model':'XUV','Year':2015}
+>>> c =  di.copy()
+>>> c
+{'Brand': 'Ford', 'Model': 'XUV', 'Year': 2015}
+>>> 
+
+3.fromkeys():- Returns a dict with specified key and value.
+
+ex:-
+>>> x = ('key_1','key_2','key_3','key_4')
+>>> y = 20000
+>>> z = dict.fromkeys(x,y)
+>>> z
+{'key_1': 20000, 'key_2': 20000, 'key_3': 20000, 'key_4': 20000}
+>>> 
+
+4.get():-Returns the value of the specified key.
+
+ex:-
+>>> di = {'Brand':'Ford','Model':'XUV','Year':2015}
+>>> x = di.get('Year')
+>>> x
+2015
+
+5.items():-Returns a (list) containing the dictionary key and value in a tuple.
+
+ex:-
+>>> di = {'Brand':'Ford','Model':'XUV','Year':2015}
+>>> x = di.items()
+>>> x
+dict_items([('Brand', 'Ford'), ('Model', 'XUV'), ('Year', 2015)])
+
+6.keys:- Returns a list containing the dictionary's keys.
+
+>>> di = {'Brand':'Ford','Model':'XUV','Year':2015}
+>>> x = di.keys()
+>>> x
+dict_keys(['Brand', 'Model', 'Year'])
+
+
+7.pop():Removes the element with the specified key.
+
+ex:-
+>>> di = {'Brand':'Ford','Model':'XUV','Year':2015}
+>>> di.pop('Model')
+'XUV'
+>>> di
+{'Brand': 'Ford', 'Year': 2015}
+>>> 
+
+8.popitem():-Removes the last inserted key-value pair.
+
+ex:-
+>>> di.popitem()
+('Year', 2015)
+>>> di
+{'Brand': 'Ford', 'Model': 'XUV'}
+
+9.setdefault():-Returns the value of the specified key,if the key does not exits, insert the key with the specified value.
+
+ex:-
+>>> di = {'Brand':'Ford','Model':'XUV','Year':2015}
+>>> di.setdefault('colour','white')
+'white'
+>>> di
+{'Brand': 'Ford', 'Model': 'XUV', 'Year': 2015, 'colour': 'white'}
+>>> 
+
+
+10.update():- updates the dictionary with the specified key-value pairs.
+
+>>> di = {'Brand':'Ford','Model':'XUV','Year':2015}
+>>> di.update({'colour':'white','break':'ABS'})
+>>> di
+{'Brand': 'Ford', 'Model': 'XUV', 'Year': 2015, 'colour': 'white', 'break': 'ABS'}
+>>> 
+
+
+11.values():-Returns a list of all the values in the dictionary.
+
+>>> di = {'Brand':'Ford','Model':'XUV','Year':2015}
+>>> x = di.values()
+>>> x
+dict_values(['Ford', 'XUV', 2015])
+>>> 
+
+
+None data type:-
+
+None means nothing or no value associated.
+if the value is not available,then to handel such type of cases None introduced.
+
+None= Null
+
+
+def m1():
+    a = 10
+
+print(m1())
+
+ans:- None
+
+pychram:- https://www.jetbrains.com/pycharm/download/#section=windows
+
+
+
+IDLE:- Integrated developement leraning and enviroment.
+
+just of the learning basic python,but it is not implement in python project,because in the project we are using other files like(HTML,Css,JS)
+
+
+
+IDE:- Integrated developement enviroment.
+
+like:- Pycharm, Eclipsm, Vscode, Atom
+
+These are the IDE of python,In this platform we are using evry type of file which is using in python developemnt.
+
+
+
+
+HW:- 
+list:-
+1. Write a Python program to sum all the items in a list.
+
+str:-
+1.Write a Python program to calculate the length of a string. 
+
+dict:-
+
+1. Write a Python script to add a key to a dictionary.
+
+Sample Dictionary : {0: 10, 1: 20}
+Expected Result : {0: 10, 1: 20, 2: 30}

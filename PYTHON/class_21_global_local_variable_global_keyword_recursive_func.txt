@@ -1,0 +1,135 @@
+Types of Variables:-
+------------------
+
+a data is contains in a name of storage space is known as variables.It contanins several type data are contained like int,float,list,set,dict etc.
+
+In python there are 2 types of variable is present.
+
+1.Global variables
+2.Local Varibales
+
+Global variables:-
+-----------------
+The variable which are declare  outside of the function are called global variables.These variables can be accessed in all functions of that module.
+
+ex:-
+a = 10
+
+def f1():
+    print(a)
+
+def f2():
+    print(a)
+
+def f3():
+    print(a)
+
+output:-
+
+10
+10
+10
+
+
+Local variable:-
+
+The variable which are declare inside a function are called local variables.Local variables are available only for the function in which we declared it that is form outside of function we cannot access.
+
+ex:-
+
+def f1():
+    a = 50
+    print(a)
+
+def f2():
+    print(a)
+
+f1()
+f2()
+
+output:-
+NameError: name 'a' is not defined---------f2()
+50------------------------------------------f1()
+
+
+Note:- Local variables is more preferance compared to Global variable.
+
+ex:-2
+
+a = 10
+
+def f1():
+    a = 50
+    print(a)
+
+def f2():
+    print(a)
+
+f1()
+f2()
+
+output:-
+
+50 ----------------------f1()
+10-----------------------f2()
+
+
+global keyword:-
+
+we can use global keyword for the 2 purpose:-
+
+1.To decalre global variable inside  function
+2.To make global variable available to the function so that we can perform required modification.
+
+ex:-
+
+a = 10
+def f1():
+    global a
+    a =70
+    print(a)
+
+def f2():
+    print(a)
+
+f1()
+f2()
+
+output:-
+
+70-------------f1()
+70-------------f2()
+
+
+
+
+Recursive function:-
+-------------------
+
+A function that calls itself is known as Recursive function.
+
+ex:-
+
+factrorial(4) = 4*factrorial(3)
+				4*3*factrorial(2)
+				4*3*2*factrorial(1)
+				4*3*2*1
+				=24
+
+factorial(n) = n*factrorial(n-1)
+
+The main adv of recursive functions are:
+
+1.we can resuce length of the code and improves readability.
+2.We can solve complex problems very easily.
+
+q.Write a python function to find factorial of given number with recursion.
+
+def factorial(n):
+    if n == 0:
+        result = 1
+    else:
+        result = n*factorial(n-1)
+    return result
+
+print(factorial(5))

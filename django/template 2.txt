@@ -1,0 +1,38 @@
+**DJANGO TEMPLATE**
+--------------------------------------------------------------------------------------------------------------------------------
+==> It is not recommanded to write html code inside python script ( means in view.py) because:
+
+1) it reduces readabilty because python code mixed with html code.
+
+2) no seperation of roles. python developer has to concentrate on both python amd html code.
+
+3)it does not pramote reusability of code.
+
+so we can solve above problems to create html file seperatly and   this html file is nothing but TEMPLATE FILE.
+
+==> steps to create template file:
+
+==>in setting.py ...it is required to add that template file.
+
+import os 
+
+TEMPLATE_DIR=os.path.join(BASE_DIR,'template')
+....
+'DIRS=['TEMPLATE_DIR']
+
+
+==>we can write html file in project level and we can use that file in multiple application.
+
+==> to create directory with name template.
+
+==>to create another directaory in template. and here we create html files.
+-------------------------------------------------------------------------------------------------------------------------------------
+*DATA TEMPLATING LANGUAGE (DTL)* (jinja 2)
+
+
+==>DTL it is template language. it is designed to feel comfortable to those used to working with html 
+
+==> jinja2 is a modern and designed friendly templating language for python.
+-------------------------------------------------------------------------------------------------------------------------------------
+
+

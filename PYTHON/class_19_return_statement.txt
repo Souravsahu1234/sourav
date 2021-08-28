@@ -1,0 +1,28 @@
+Return statement:-
+-----------------
+Function can take input values as parameter and excecutes business logic and returns output to the caller with 'return' statements.
+
+Q. Write a function to accept 2 numbers as input and return sum
+
+
+def add(x,y):
+    return x+y
+
+result = add(30,70)
+print('The sum is:',result)
+
+Q_2:- Write a function to check whether the given number is even or odd?
+
+def even_odd(num):
+    if num % 2 == 0:
+        print(num,'is even number')
+    else:
+        print(num,'is odd number')
+
+even_odd(15)
+
+
+Homework:-
+
+Write a function to find factorial of given number.
+

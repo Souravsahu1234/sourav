@@ -1,0 +1,62 @@
+                           File Handeling
+                           --------------
+
+
+ As the part of programming requirement,we have to store our data permanently for future purpose.For this requirement we shoud go for files.
+
+
+ File are very common permanent storage areas to store our data.
+
+ Types of Files:-
+ ----------------
+
+ 1.Text file
+
+ usually we can text files to store char.data.
+
+ 2.Binary files
+
+ usually we can use binary files to store binary dtat like image,audio,video files etc.
+
+ Opening a file:-
+ ---------------
+
+ Before performing any operation(like read or write) on the file,first we have to open that file.For this we should use python's inbuilt function :- open()
+
+ But at the time of open,we have to specify file name or file location and file mode,which represents the purpose of opening file.
+
+ f = open(filename,mode)
+
+ modes
+ -----
+
+ 1. r :-> Open an existing file for read operation,The file pointer is positioned at the beginning of the file.If the specified file does not exist then we will get FileNOtFoundfError.this default mode.
+
+ f = open('chiku.txt','r')
+
+ f = open('C:\\Users\\chand\\OneDrive\\Desktop\\babulu.txt','r')
+
+ 2. w :-> Open an existing file for write operation,if the file already contains some data the it will be overridden,if the specified file is not alraed avaiable then this mode will create that file.
+
+ 3. a :-> Open an existing file for append operation,It won't override existing data.If the specified file is not alraedy available then this mode create a new file.
+
+ Note:- All the above modes are applicable for text files,if the above modes suffixed with 'b' these represent for binary files.
+
+ :-> rb,wb,ab
+
+ Closing a file:-
+-----------------
+
+After completing our operation on the file,It is highly recommended to close the file for this we have to use close() function.
+
+f.close()
+
+
+Reading Character Data from text files:-
+
+we can read character data from text file by using the some read method
+
+read():- To read total data from the file.
+read(n):- To read 'n' char from the file.
+readline():- To read only one line.
+raedlines:- To read all line into a list.

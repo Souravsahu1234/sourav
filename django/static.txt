@@ -1,0 +1,21 @@
+STATIC FILES:-
+----------------
+
+==>Up to templates we run or our output is only normal text data. but some times our requirnment is to insert static files likes images,css file.
+==>create folder static at project level ( same as template folder) and inside static folder just create images folder.
+==>in setting.py add static directory path. 
+
+STATIC_DIR=os.path.join(BASE_DIR,static)
+
+
+STATICFILES_DIR=[STATIC_DIR]
+
+==> AT the beginning of the HTML file we have to include template tag {% load static %}......just after <!DOCKTYPE html>
+
+==>we have to include images file using following way
+
+<img src="{% static "images/flower.jpg" %}">
+
+
+
+

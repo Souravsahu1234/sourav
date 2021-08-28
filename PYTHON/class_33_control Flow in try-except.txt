@@ -1,0 +1,32 @@
+control Flow in try-except
+_____________________________
+
+syntax:-
+
+try:
+	stmt_1
+	stmt_2
+	stmt_3
+
+except ErrorName:
+	stmt_4
+
+stmt_5
+
+case_1:- If there is no exception.
+
+1,2,3,,5 Normal Termination
+
+case_2:- If an exception raised at stmt_2 and corresponding except block matched
+1,4,5
+
+case_3:- If an exception raised at stmt_2 and corresponding except block notmatch
+1, Abnormal termination.
+
+case_4:- if an exception raised at stmt_4 or at stmt_5 then it is always abnormal termination.
+
+try:
+    f = open('swayan.txt','r')
+except IOError:
+    print("File not found")
+

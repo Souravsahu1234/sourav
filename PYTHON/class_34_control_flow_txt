@@ -1,0 +1,87 @@
+try with multiple except blocks:=
+=================================
+
+The way of exception handeling is varied from ecption to exception.Hence for every exception tyoe a separate except block we have to provied that is withn muliple except block is possiable anand recooended to use.
+
+ex:-
+try:-
+----
+-------
+except ZeroDisionError:
+	--------
+except FileNotFound"
+	----------
+
+try:
+    x = int(input("Enter First no."))
+    y = int(input("Enter secong no."))
+
+    print(x/y)
+
+except ZeroDivisionError:
+    print('connot divided with zero')
+except ValueError:
+    print('Plaese provides int value only')
+
+Note:- If try with multiople except blocks avaiable then the order of these excepy block is imp.Python interpreter will always consider from top to buttommn untill matched  except block identified
+
+
+try:
+    age = int(input('Enter the age:'))
+
+    if (age<18):
+        raise ValueError
+
+    else:
+        print('The age is valid')
+except ValueError:
+    print('The age is not define')
+
+
+ single except block that can handel multiple exception:-
+ ------------------------------------------------------
+
+ we can write single except block that can habdel mitlipledofferent typs of excepetions
+
+ syntac:=
+
+ except(Exception_1,Exception_2,Exception_3): or 
+
+except(Exception_1,Exception_2,Exception_3) as msg
+
+Prenthsis are mandatory and this group oxf exception internally considered as tiple.
+
+try:
+    x = int(input("Enter First no."))
+    y = int(input("Enter second no."))
+
+    print(x/y)
+
+except(ZeroDivisionError,ValueError)as msg:
+    print('Plz provide valid number only and probele is ',msg)
+
+
+Finally Block:-
+--------------
+
+It is recommnded to maintain clean up code isside try blockbracuse theere is no gurmentee for the execution ov every statement isnide try block always.
+
+syntax:-
+
+try:-
+	Risky code
+except:
+	Handeling code
+
+Finally:
+	clean up code
+
+
+	
+try:
+    print('try')
+    print(10/0)
+except ZeroDivisionError:
+    print('Yes we will done')
+finally:
+    print('Finally')

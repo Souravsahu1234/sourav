@@ -1,0 +1,169 @@
+Nested for:-
+
+For loop inside a another for loop is knows as nested for loop.
+
+ex:-
+
+for i in range(1,10):
+	for j in range(2,20):
+	print(j)
+
+
+
+	Pattern programs
+	----------------
+
+pattern-1:-
+
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+
+n = int(input('Enter the no. of rows:'))
+
+for i in range(1,n+1):
+    print('*'*n)
+
+2.
+
+*
+**
+***
+****
+*****
+******
+*******
+
+ans:-1
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print('*',end="")
+    print()
+
+ans-2:-
+
+n = int(input('Enter the no. of rows:'))
+
+for i in range(1,n+1):
+    print('*'*i)
+
+
+
+while loop:-
+
+if we want to excute a group of statement iteratively untill some condition false,then we should go for while loop.
+
+syntax:-
+
+while consition:
+	body/statement
+
+Ques:-
+
+1. print numbers from 1 to 10 by using while loop?
+
+x = 1
+while x <= 10:
+    print(x)
+    x = x+1
+
+
+
+              Transfer Statement:-
+              ---------------------
+1.break
+2.continue
+3.pass
+
+
+break:-
+we can use break statement inside loop to break loop execution based on some condition.
+
+for i in range(10):
+    if i == 7:
+        break
+    print(i)
+
+output:-
+0
+1
+2
+3
+4
+5
+6
+
+ex:-2
+
+cart = [10,20,30,40,600,70,700,70,56,67]
+
+for item in cart:
+    if item>500:
+        break
+    print(item)
+
+output:-
+
+10
+20
+30
+40
+
+
+2.continue:-
+
+we can use continue statement to skip current iteration and continue next iteration.
+
+ex:-To print odd numbers in the range 0 to 9
+
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
+
+output:-
+1
+3
+5
+7
+9
+
+
+ex:-
+cart = [10,20,500,700,50,60]
+
+for item in cart:
+    if item>= 500:
+        continue
+    print(item)
+
+
+output:-
+10
+20
+50
+60
+
+
+
+3. pass statemnt:-
+
+pass is a keyword in python.
+
+In our programming syntactically if block is required which won't do anything then we can define that empty block with pass keyword.
+
+if True:
+    pass
+
+
+pass:-  
+
+1.It is an empty statement
+2.It is null statemnt
+3.It won't do anthing.

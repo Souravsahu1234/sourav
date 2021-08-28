@@ -1,0 +1,117 @@
+                                    AGILE
+
+Agile = Agile is a complete software development life cycle(SDLC) Process.
+? To complete all the requirements of  customer/stack holders in step by step.
+Que : WHAT IS AGILE? (Standard definition)
+?Agile is an approach to software development under which requirements and solution revolve through the collaborative efforts of self organizing and cross functional team and their customer.
+
+Que : Why we use Agile? 
+? Developer and tester  work together in Agile .(both development and testing activities are concurrent)
+?Agile is fast model.(faster than water fall and v model)
+?very less documentation.(90% documents are not required)
+?we can submit one version of software to customer after completing one sprint.
+?if any changes comes while working on sprint. We can easily resolve.
+?Less time required.
+
+?  Which persons involve in agile and their roles ?
+?Product Owner.
+?Scrum Master
+?Developer
+?Tester
+?Roles in Agile.
+Product Owner :
+? product owner is main person in Agile.
+? To create product backlog.
+?To create Epic and divide that Epic into multiple stories.
+? He is responsible for getting the requirements   from customer/ stakeholder.
+?He is mediator between customer and company.
+? He decide the release date and content.
+?Accept and reject work result.
+? prioritize feature according to market value.
+
+ Scrum Master :
+?The scrum Master only care for process about work
+?a scrum master is the facilitator for an agile development team.
+?He is mediator between product owner and development, tester.
+?He is not a technical person (NO developer, NO tester) 
+
+Developer :( Task )
+? Review the story.
+?Estimate the story (using poker point)( points is in fib number like 1,2,3,5,8,13,21). It is also called as story point.
+(story point : time required to complete sprint)
+? Design  and coding.
+? Write unit test.
+Tester :( Task )
+?Review the Story.
+?write test cases.
+?review test case.
+?create Test environment
+?Execute Test Cases
+?Reports bugs.
+
+Que : what is Product Backlog?
+? It is a document which involve complete information about software.
+?prepared by Product owner. ( prepared in sequential manner )
+?product backlog converted into EPIC.
+Que : What is Epic and Story?
+Epic ?  it is a large requirement.( made by product owner), Epic converted into story.
+Story? Small  requirnment.
+task?  actual work done by developer and tester.(action we need to complete particular story).
+
+? Meeting in Agile? ( ceremonies in agile?)
+1) Release planning Meeting : 
+? If customer want their product in 3 months then the product owner divide in specific parts.  
+?how many sprint is required ? How many stories in one sprint ?
+Sprint1Sprint2Sprint3Sprint4Sprint5
+?sprint duration is 2 – 3 weeks (  like start at 1 jan 2021 to 21 jan 2021)
+? what are the stories Implement in sprint.
+These all things done in this meeting.
+
+2) sprint planning meeting :
+?  Estimate to the story
+? one time meeting…. before starting a sprint( duration 2 hr)
+?scrum master + developer + tester
+3) sprint review meeting :
+?after completing a sprint 
+?developer and tester give demo to  product owner.
+?last day of sprint.
+4) sprint retro meeting : (retrospective)
+?after closing sprint
+?after sprint  product owner ,developer , tester analysis to 
+    What went well? What went wrong? Improvement areas.
+5) daily scrum meeting(daily call, daily stand up):
+?duration 15-20 min.
+?scrum master developer tester
+?status of yesterday work and today work(status of last and next 24 hr).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         

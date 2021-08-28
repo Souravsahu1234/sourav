@@ -1,0 +1,111 @@
+django notes:
+
+web application: The application which will provide services over the web are called web application.
+
+every web application contain 2 main components: 1) front end 2)back end
+
+frontend represent what user is seeing on the web site.
+requirnment: HTML CSS JS BS JQ
+
+Backend:it is used to decide what to show to end user on the front end.
+requirnment: python, django, database(sqlite3,mysql,oracle)
+
+QUE:: what is Django?
+
+Django is free and open source web framework and it is written in python.
+
+QUE:: which architecture pattern that followed by django?
+
+M V T architecture.
+
+M=MODEL
+V=VIEW
+T=TEMPLATE
+
+-->The MVT is an design pattern that separates an application into three main logical components Model, View, and Template. 
+Each of these component has their own role in a Project.
+
+-->MODEL:The Model responsible to handle database. It is a data access layer which handles the data.
+
+-->VIEW:* The user can send request by interacting with template, the view handles these requests and sends to Model then get appropriate response from the Model, 
+          sends response to template. 
+        * It may also have required logics. 
+        * It works as a mediator between Template and Model.
+
+-->TEMPLATE:* Basically it is responsible for showing end user content, we can say it is user interface. 
+            * It may consists of HTML, CSS, JS mixed with Django Template Language. 
+
+
+QUE:: Feauture of django?
+
+FAST, FULLY LOADED, SECURITY,SCALABILITY,VERSATILE.
+
+QUE:How to install django?
+
+pip install django.
+
+QUE:: what is pip?
+
+PIP is a package managment system written in python. it is used to install and manage software package.
+
+QUE:: what is project and application in django and how it create?
+project:
+A Django project is a collection of application and configuration which forms a full web application
+example: bank project
+
+cmd: django-admin startproject projectname 
+
+Application:
+to perform a particular task.
+example: loan app, finance app, insurance app
+
+cmd:py manage.py startapp appname.
+
+
+
+QUE: Explian inner file in project level?
+
+1)__init__.py==>The folder which contains __init__.py file is considered as python package. 
+ 
+2)wsgi.py==>WSGI (Web Server Gateway Interface) is a specification that describes how a web server communicates with web applications, 
+                 and how web applications can be chained together to process one request.
+
+3)asgi.py==>ASGI (Asynchronous Server Gateway Interface) is a spiritual successor to WSGI, 
+ 
+4)settings.py==>This file contains all the information or data about project settings. 
+     E.g.:- Database Config information, Template, Installed Application, Validators etc.
+
+5)urls.py ==>This file contains information of url attached with application. 
+
+6)manage.py==> The most commonly used python script is manage.py and it is command line utility to intereact with django project in various way like to run development
+               server ,run test,create migration.
+
+ 
+Que:Explain Inner file in APP level?
+
+
+1)__init__.py ==>The folder which contains __init__.py file is considered as Python Package.
+
+2)admin.py ==>This file is used to register sql tables so we could perform CRUD operation from Admin Application. Admin Application is provided by Django to perform CRUD operation.
+
+3)apps.py ==>This file is used to config app.
+
+4)models.py ==> This file is used to create our own model class later these classes will be converted into database table by Django for our application.
+
+5)tests.py ==>This is files is used to create tests.
+
+6)views.py ==> This file is used to create view. We write all the business logic related code in this file.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

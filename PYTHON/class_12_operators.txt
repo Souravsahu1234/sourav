@@ -1,0 +1,162 @@
+                        Operators
+                        ---------
+
+operator is a symbol that perform certain operation.
+python provides the following set of operator.
+
+1. Arithmetic Operator.
+2. Relational or comparision Operator.
+3. Logical Operator.
+4. Bitwise Operator.
+5. Assignment Operator.
+6. Special Operator.
+
+
+Arithmetic Operator:-
+
+which Operator is performing mathmetical operations that is callde Arithmetic Operator.
+
++ ---> Addition
+- --->substraction
+* --->multiplication
+/ --->division
+% --->modulo
+// --> Floor division
+** --> exponent or power
+
+ex:=
+
+>>> b = 25
+>>> 
+>>> a + b
+75
+>>> a - b
+25
+>>> a * b
+1250
+>>> a/b
+2.0
+>>> a % b
+0
+>>> a // b
+2
+>>> 3 ** 2
+9
+>>> 3 ** 4
+81
+>>> 
+
+
+string:- In the arithmetic operation there are 2 operator are use in string data type also.
+
+addition:-
+
+>>> 'AB' + 'CD'
+'ABCD'
+>>> 
+
+multiplication:-
+
+>>> 'AB' * 3
+'ABABAB'
+>>> 
+
+Relational or comparision Operator:-
+
+which is given relation between two numbers or variables,that is called Relational operator and result is given the boolean form(True/False).
+
+>,>=,<,<=,==,!=
+
+>>> a = 10
+>>> b = 20
+>>> 
+>>> a > b
+False
+>>> a >= b
+False
+>>> a < b
+True
+>>> a <= b
+True
+>>> a == b
+False
+>>> a != b
+True
+>>> 
+
+3.Logical Operator:-
+
+and , or , not
+
+we can apply for all types.
+
+Note:- It's returns the boolean value.
+
+For boolean types behaviour:-
+
+and:- If both arguments are True then only result is True otherwise False.
+
+T and T = T
+T and F = F
+F and F = F
+
+or:- If atleast one argument is True the result is True otherwise False.
+
+T or T = T
+T or F = T
+F or F = F
+
+not:- complement
+
+>>> not True
+False
+>>> not False
+True
+>>> 
+
+For non-boolean types behaviour:-
+--------------------------------
+
+0 means False
+non-zero means True
+empty string,list,tuple,set,fzset,bytes,bytearry,dictiuonary all are False.
+
+4.Bitwise operator:-
+
+we can apply these operator bitwise.
+These operator are applicable only for int and boolean types.
+
+& --- and
+| --- or
+^ --- Xor
+~ --- Not
+<< --- B-Right
+>> ----B-Left
+
+Assingnment Operators:-
+----------------------
+
+We can use assignment operator to assign same component of value to the variable.
+
+ex:-
+x = 10
+
+compound assignment:-
+
+we can combine asignment operator with some other operator to form compound assignmemnt operator.
+
+>>> x = 10
+>>> x = x + 10
+>>> 
+>>> a = 20
+>>> 
+>>> a+=10----------------compound assignment.
+>>> a = a+ 10
+
++= ---- 
+-=
+*=
+/=
+//=
+**=
+%=

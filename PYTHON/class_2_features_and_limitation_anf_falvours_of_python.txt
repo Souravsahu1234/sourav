@@ -1,0 +1,76 @@
+Feature of python:-
+------------------
+
+1.simple and easy to learn:-
+
+Python is a simple programming lang.when we read python program,we can feel like reading english statement.because The syntax are very simple and 33 keywords are avialble.when compared with other lang.we can write programs with less of lines.Hence more readablity and simplicity.
+we can reduce developemt and cost of the project.
+
+
+2.Freeware and Open source:-
+
+We can use python software without any lience and it is freeware.
+It's source code is open,so that we can customize based on our requirement.
+
+3.High level Programming lang:-
+
+Python was high level programming lang. hence it is programmer friendly lang.Being a programmer we are not required to concentrate low level activities like memory manegement and security etc.
+
+4.Platform Independent:-
+
+Once we write a python program it can run on any platform without rewriting once again.Internally PVM(python virtual machine) is responsible to convert into machine understable form.
+
+5.Portability:-
+Python program are portable that is we can migrate from one platform to another platform very easily.
+
+6.Dynamically Typed:-
+
+In python we are not required to declare type of variable,when ever we are assiging the value,based on value,type will be allocated automatically.Hence python is considered as dynamically typed lang.
+
+7.Both procuder oriented and Object Oriented:-
+
+Python lang supports both produce oriented(like c++ and perl) and object oriented(like C and Java)fetures.Hence we can get benifits of both like security and reusability etc.
+
+
+8.Interpreted and extensive and embedded:-
+
+9.extensive lab:-
+
+python has a rich inbuilt lib. There are 60,000+ lib. are present in python.
+being a programmer we can use this lib. directly and we are not responsible to implement the function.
+
+
+Limitation of python:-
+
+1.In the telecome secture and application python was not envoled.
+2.In the Banking secture  and application python was not envoled.
+3.In mobile application also python was not work properly.
+
+Flavors of python:-
+
+1.CPython:- It can be used to work C lang. application means python to c.
+
+2.Jython or JPthon:It can be used to work Java lang. application means python to java.
+
+3.IronPython:- Python to .net
+
+4.RubyPython:- Python to Rubu
+
+5.PyPy and AnacondaPython :- useing in datascience so that it is not pvm machine work.JIT is working here.
+
+
+Python version:
+
+python 1.0 introduced in jan 1994
+python 2.0 introduced in oct 2000
+python 3.0 introduced in dec 2008
+
+python3:- 3.9.5    python- 2.8.7
+
+
+
+
+---------               -----------
+
+
+

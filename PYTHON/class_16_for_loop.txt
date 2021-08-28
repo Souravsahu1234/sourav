@@ -1,0 +1,84 @@
+Iterative statement:-
+
+If we want to excute a group of statement multiple times then we should go for iterative statements.
+
+Python supports 2 types of iterative statements.
+
+1.for loop
+2.while loop
+
+
+for loop:-
+
+if we want to excute some action for element present in some sequence(like list,set etc)then we should go for for loop.
+
+
+syntax:-
+
+for x in sequence:
+	body
+
+where sequence can be string or any collection.body will be executed for every element present in the sequnec.
+
+s = 'subhankar lenka'
+
+for i in s:
+    print(i)
+
+output:-
+
+s
+u
+b
+h
+a
+n
+k
+a
+r
+ 
+l
+e
+n
+k
+a
+
+
+
+range:- it's returns the value as sequence wise.
+
+'''for i in range(10):
+    print(i)'''
+
+for i in range(21):
+    if(i%2!=0):
+        print(i)
+
+dictionary:=
+
+d = {'name':'kusha','age':23,'passout':2021}
+
+for k,v in d.items():
+    print(k,'=',v)
+
+ output:-
+
+name = kusha
+age = 23
+passout = 2021
+
+
+#To print sum of numbers present inside list.
+
+li = eval(input('Enter your list:'))
+
+sum = 0
+
+for i in li:
+    sum = sum + i
+print(sum)
+
+
+1.WAP to print hello 10 times.
+2.To display even number from 0 to 10
+3.To display numbers from 10 to 1 descending order
